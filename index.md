@@ -4,6 +4,6 @@ layout: home
 permalink: /
 ---
 
-# Welcome
+# Yutixcode
 
-Bla bla bla bla. Bla bla bla bla bla bla bla bla.
+Heker bang? :v
