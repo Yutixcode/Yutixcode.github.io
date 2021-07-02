@@ -4,6 +4,6 @@ layout: home
 permalink: /
 ---
 
-# Yutixcode
+# YutixCode
 
-Heker bang? :v
+Pengen jadi heker beneran tapi gapunya laptop :v
