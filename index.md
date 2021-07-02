@@ -1,5 +1,5 @@
 ---
-title: /root/YutixCode
+title: /root
 layout: home
 permalink: /
 ---
