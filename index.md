@@ -6,4 +6,4 @@ permalink: /
 
 # YutixCode
 
-Pengen jadi heker beneran tapi gapunya laptop :v
+Gift laptop bang biar bisa jadi heker beneran :v
