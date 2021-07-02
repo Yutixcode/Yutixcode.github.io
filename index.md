@@ -6,4 +6,4 @@ permalink: /
 
 # YutixCode
 
-Ndak punya skill :v
+Pengen jadi heker pro tapi ndak punya pc.
