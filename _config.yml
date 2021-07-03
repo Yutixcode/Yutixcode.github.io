@@ -1,18 +1,62 @@
-title: 'YutixCode'
-description: "A jekyll theme inspired by linux consoles for hackers, developers and script kiddies."
+site: Sidey
+url: #yoururl
+title: Sidey
+description: Simple and minimalistic jekyll blogging theme.
+twitter:
+  username: #yourusername
+  card: summary
+  creator: #yourusername
+author:
+  twitter: #yourusername
+  name: #yourusername
+  avatar:
+  email: #youremail
+  url: #yoururl
+permalink: pretty
+
 baseurl: ""
-url: ""
 
-header_pages:
-  - index.md
-  - peter.md
-  - about.md
-  - contact.md
+highlighter: none
 
-style: dark
+exclude:
+  - .jekyll-cache
+  
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
 
-footer: 'Developed by <b>YutixCode</b>'
+sass:
+  sass_dir:          _sass
+  style:            :compressed
 
-# Build settings
-markdown: kramdown
-remote_theme: b2a3e8/jekyll-theme-console
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap  
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
