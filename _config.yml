@@ -1,44 +1,15 @@
-# Setup
-title: Dark Poole
-url: https://yutixcode.github.io
-paginate: 1
-baseurl: ""
-permalink: pretty
+# Example Site settings
 
-# Gems
+#google_analytics: UA-NNNNNNNN-N
+
+header_pages:
+  - index.md
+  - issue.md
+  - about.md
+
+footer: 'View on <a href="https://github.com/kiinlam/vue-examples">Github</a>'
+
+style: light # dark (default) or light
+
 plugins:
-  - jekyll-gist
-  - jekyll-paginate
   - jekyll-seo-tag
-
-# Optimize Jekyll
-exclude:
-  - .editorconfig
-  - .git
-  - .jekyll-cache
- 
-sass:
-  sass_dir: _sass
-  style: :compressed
-
-# Options
-
-# Replace this value and uncomment to enable Google Analytics tracking
-# ga_analytics: UA-000000-0
-
-# Specify the author for blog posts
-author:
-  name: Mark Otto
-  url: https://twitter.com/mdo
-  email: markdotto@gmail.com
-
-# Custom vars
-version: 3.0.0
-
-# Navbar page list
-nav:
-  - title: Blog
-    url: /archive
-
-  - title: About
-    url: /about
