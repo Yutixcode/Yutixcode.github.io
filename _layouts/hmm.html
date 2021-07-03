@@ -10,7 +10,13 @@
 
     <main>
       {{ content }}
-      <script>document.write('mmk');</script>
+      <script src="https://utteranc.es/client.js"
+        repo="Yutix/sodiah"
+        issue-term="{{ page.title }}"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+    </script>
     </main>
 
     {%- include footer.html -%}
