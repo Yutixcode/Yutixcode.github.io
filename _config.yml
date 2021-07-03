@@ -1,6 +1,6 @@
 # Setup
 title: Dark Poole
-url: https://getpoole.com
+url: https://yutixcode.github.io
 paginate: 1
 baseurl: ""
 permalink: pretty
@@ -16,11 +16,7 @@ exclude:
   - .editorconfig
   - .git
   - .jekyll-cache
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE.md
-  - README.md
-
+ 
 sass:
   sass_dir: _sass
   style: :compressed
