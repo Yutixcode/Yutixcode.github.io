@@ -1,41 +1,42 @@
-# Site settings
-title:          YutixCode
-description:    "Minimal Jekyll theme for storytellers"
-baseurl:        "/"
-url:            "https://yutixcode.github.io"
+# Title of your blog; shows in the header
+name: "hikari"
 
-# Google Analytics
-google_analytics: UA—XXXXXXXX-X
+# Description of your content (will only be used on Google Search)
+description: "Fluid, responsive blog theme for Jekyll"
 
-# Author
-author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+# Your name. Will show in your footer + sidebar
+author: "John Doge"
 
-# Build settings
-markdown:       kramdown
-include:
-  - _pages
+url: "http://m3xm.github.io"
+baseurl: "/hikari-for-jekyll"
 
-# Assets
-sass:
-  sass_dir:     _sass
-  style:        compressed
+# A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words.
+author-bio: "I'm a dog. I develop things. This is my blog so why don't you close this damn side panel (cursed by most UX Designers but I don't care, I do whatever I want) and start reading my awesome stuff?"
 
-# Gems
+# Social Accounts (mine, as placeholders)
+
+twitter: mx3m
+github: m3xm
+dribbble: m3xm
+instagram: m3xm
+
+# Google Analytics (you may want to changes these with yours or even delete :)
+
+ga_domain: m3xm.github.io
+ga_tracking_id: UA-47727049-1
+
+# Other (refer to http://jekyllrb.com/docs/home/ for further details on the below)
+
+markdown: kramdown
+permalink: pretty
 plugins:
-  - jekyll-feed
   - jekyll-paginate
-  - jekyll-seo-tag
-  # - jemoji #Uncomment this to allow emoji in your post
 
-# Permalinks
-permalink:      /:year-:month-:day/:title
-paginate:       5
+paginate: 10
+paginate_path: "/page/:num"
 
-# Excludes
-exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+# SCSS
 
-# Disqus (Set to your disqus id)
-disqus:         jekyll-tale
+sass:
+  sass_dir: _scss
+  style: :compressed
