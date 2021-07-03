@@ -1,15 +1,10 @@
 title: YutixCode
-author: Author
-email: your-email@example.com
-description: A clean and responsive jekyll theme
+author: Yutix
+email: nouhimetv@gmail.com
+description: "Situs yang dirancang khusus untuk anak dibawah 12 tahun."
 
 date_format: "%F"
-
-# google_analytics:
-# disqus_shortname:
-
 blog_theme: dark
-
 markdown: kramdown
 
 plugins:
