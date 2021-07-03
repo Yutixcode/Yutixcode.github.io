@@ -7,7 +7,7 @@ layout: default
   {% for post in site.posts %}
   <li class='posts__item'>
     <time class='posts__date' datetime='{{ post.date | date_to_xmlschema }}'>
-      {% assign date_format = site.date_format | default: '%b %-d, %Y' %}
+      {% assign date_format = site.date_format | default: '%F' %}
       {{ post.date | date: date_format }}
     </time>
     <div class='posts__title'>
