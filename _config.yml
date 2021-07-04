@@ -1,11 +1,21 @@
-title: YutixCode
-author: Yutix
-email: nouhimetv@gmail.com
-description: "Situs yang dirancang khusus untuk anak dibawah 12 tahun."
+# Site settings
+title: "TextLog"
+description: "Minimalist Jekyll theme for documentation site"
+baseurl: "/textlog" # required if used under gh-pages branch, else (under master branch) just leave empty/blank
+url: ""
+author: "John Doe"
 
-blog_theme: dark
-markdown: kramdown
+# Build settings
+kramdown:
+  input: GFM
+permalink: pretty
+
+# Third-party services
+# just leave empty to disable it
+google_analytics:
+disqus_shortname: 
 
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude: ["LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script"]

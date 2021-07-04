@@ -1,126 +1,192 @@
-html {
-  box-sizing: border-box;
-  font-size: $default-font-size;
+.underlined {
+    flex: 1;
+    text-decoration: none;
+    background-image: linear-gradient(to right, yellow 0, yellow 100%);
+    background-position: 0 1.2em;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: background .5s;
+    &:hover, {
+        background-size: 100% 100%;
+    }
+    &--thin {
+        background-image: linear-gradient(to right, black 0, black 100%);
+    }
+    &--thick {
+        background-position: 0 -0.1em;
+    }
+    &--offset {
+        background-position: 0 0.2em;
+        //didn't find another solution than mask the underline shape by a box shadow with the same color than the bg
+        box-shadow: inset 0 -.5em 0 0 white;
+    }
+    &--gradient {
+        background-position: 0 -0.1em;
+        background-image: linear-gradient(to right, yellow 0, lightgreen 100%);
+    }
+    &--reverse {
+        background-position: 100% -0.1em;
+        transition: background 1s; //yep, that's a long link
+        background-image: linear-gradient(to right, yellow 0, yellow 100%);
+    }
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+/**
+ * Site header
+ */
+.site-header {
+    border-bottom: 1px solid $grey-color-light;
+    margin-top: -2rem;
+    max-width: $max-width;
+    p {
+      font-size: $small-font-size;
+    }
+    .site-intro {
+        font-size: $big-font-size;
+    }
 }
 
-body {
-  background-color: $body-bg-color;
-  font-family: $sans-serif-fonts;
+.smallcap {
+    //text-transform: lowercase;
+    //font-variant: small-caps;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    a,
+    a:hover {
+        text-decoration: none;
+        letter-spacing: 2px;
+        background-color: #333;
+        color: #eee;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+}
+/**
+ * Page content
+ */
+.page-content {
+    position: relative;
+    padding: $spacing-unit ($spacing-unit * 0.75);
+    margin: 1rem;
+    box-sizing: border-box;
+    max-width: $max-width;
+}
+/**
+ * Pages
+ */
+.home {
+    section + section {
+        margin-top: $spacing-unit;
+        max-width: $max-width;
+    }
 }
 
-.layout {
-  max-width: 700px;
-  margin: auto;
-  padding: 0 15px;
+.post-list > li {
+    margin-bottom: $spacing-unit / 4;
+    list-style-type: none;
+    margin-left: -2rem;
+
+    a {
+        color: $text-color;
+        text-decoration: none;
+        font-weight: normal;
+
+        &:hover {
+            color: $link-color;
+            text-decoration: underline;
+        }
+    }
+
+    time {
+        font-size: $small-font-size;
+        color: $grey-color;
+        display: inline-block;
+    }
+    @include media-query($on-palm) {
+        time {
+            display: block;
+            font-size: $small-font-size;
+        }
+    }
 }
 
-.header {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  padding: 50px 0;
+.tag-title {
+    color: $link-color;
+}
+/**
+ * Posts
+ */
+.post-header {
+    margin-bottom: $spacing-unit;
 }
 
-.main {
-  margin: 50px 0 120px;
+.post-title {
+    font-size: 2rem;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
-.header__nav {
-  white-space: nowrap;
-  overflow: auto;
-  margin-top: 12px;
+.post-meta {
+    font-size: $small-font-size;
+    font-family: $code-font-family;
+    color: $grey-color;
+    a, a:visited {
+      color: $grey-color-dark;
+    }
+    .tags {
+        a, a:visited {
+            background: $grey-color-light;
+            padding: 0.1rem 0.5rem;
+        }
+    }
 }
 
-.header__nav__item,
-.header__title {
-  text-decoration: none;
-  font-size: 1rem;
-  font-family: $serif-fonts;
-  color: $header-color;
+.post-content {
+    margin-bottom: $spacing-unit;
+    font-weight: normal;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 2rem;
+        font-weight: normal;
+    }
+
+    h1,
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    h5,
+    h6 {
+        font-size: 1rem;
+    }
 }
 
-.header__nav__item {
-  margin-right: 10px;
-}
-
-.header__title {
-  font-size: 1.55rem;
-  margin-right: 40px;
-  font-weight: bold;
-}
-
-.posts {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.posts__item {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
-  align-items: baseline;
-}
-
-.posts__date {
-  width: 30%;
-  color: $post-date-color;
-  font-size: 1rem;
-  font-family: $serif-fonts;
-}
-
-.posts__title {
-  width: 70%;
-  font-size: 1rem;
-}
-
-.posts__link {
-  color: $post-link-color;
-  text-decoration: none;
-}
-
-.footer {
-  padding: 25px 0;
-  font-size: .9rem;
-  font-style: italic;
-  font-family: $serif-fonts;
-  color: $footer-color;
-}
-
-.footer__list {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
-
-.footer__item {
-  margin-right: 10px;
-  display: flex;
-}
-
-.footer__item a {
-  color: $footer-color;
-  text-decoration: none;
-}
-
-.footer__item:nth-child(2):before {
-  content: '|';
-  margin-right: 10px;
-}
-
-.icon {
-  height: .9rem;
-  width: .9rem;
-  fill: $icon-color;
-}
-
-#disqus_thread {
-  margin-top: 60px;
+.copyright {
+  margin-top: $spacing-unit;
+  font-size: $small-font-size;
+  font-family: $code-font-family;
+  p {
+    color: $grey-color;
+    a, a:visited {
+      color: $grey-color-dark;
+    }
+  }
 }
