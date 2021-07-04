@@ -1,8 +1,8 @@
 # Site settings
 title: "TextLog"
 description: "Minimalist Jekyll theme for documentation site"
-baseurl: "/textlog" # required if used under gh-pages branch, else (under master branch) just leave empty/blank
-url: ""
+baseurl: "/" # required if used under gh-pages branch, else (under master branch) just leave empty/blank
+url: "https://yutixcode.github.io"
 author: "John Doe"
 
 # Build settings
