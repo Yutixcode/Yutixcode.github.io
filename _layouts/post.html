@@ -29,7 +29,11 @@ layout: default
     {{ content }}
   </div>
   <hr>
-  {% if page.comment %}
-    {% include disqus.html %}
-  {% endif %}
+  <script src="https://utteranc.es/client.js"
+    repo="Yutixcode/Yutixcode.github.io"
+    issue-term="{{ page.title }}"
+    theme="boxy-light"
+    crossorigin="anonymous"
+    async>
+  </script>
 </article>
