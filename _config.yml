@@ -1,9 +1,9 @@
 # Site settings
-title: "TextLog"
-description: "Minimalist Jekyll theme for documentation site"
-baseurl: "/" # required if used under gh-pages branch, else (under master branch) just leave empty/blank
+title: "YutixCode"
+description: "Website khusus anak umur dibawah 15 tahun"
+baseurl: "" # required if used under gh-pages branch, else (under master branch) just leave empty/blank
 url: "https://yutixcode.github.io"
-author: "John Doe"
+author: "YutixCode"
 
 # Build settings
 kramdown:
@@ -12,8 +12,8 @@ permalink: pretty
 
 # Third-party services
 # just leave empty to disable it
-google_analytics:
-disqus_shortname: 
+#google_analytics:
+#disqus_shortname: 
 
 plugins:
   - jekyll-sitemap
