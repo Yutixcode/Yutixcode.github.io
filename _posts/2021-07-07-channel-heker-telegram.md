@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Channel Telegram for Heker :v"
+title: "Channel Hacking Telegram"
 tags: [Info, Hacking]
 comment: false
 ---
