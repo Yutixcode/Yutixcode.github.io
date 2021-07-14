@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Password for You
+title: Your Password
 ---
 
+Password ini tidak permanen dan akan berganti setiap waktu yg ditentukan.
 <div id="is"></div>
 <script type="text/javascript">
   const queryString = window.location.search;
