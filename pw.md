@@ -1,3 +1,8 @@
+---
+layout: page
+title: About
+---
+
 <div id="is"></div>
 <script type="text/javascript">
   const queryString = window.location.search;
