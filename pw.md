@@ -3,10 +3,7 @@ layout: page
 title: Your Password
 ---
 
-Password ini tidak permanen dan akan berganti setiap waktu yg ditentukan.
 <div id="is"></div>
-Kalo lu mau yg tanpa password, tinggal chat gua aja.
-
 <script src="https://utteranc.es/client.js"
   repo="Yutixcode/Yutixcode.github.io"
   issue-term="{{ page.title }}"
