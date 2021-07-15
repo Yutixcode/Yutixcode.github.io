@@ -15,4 +15,4 @@ $ pip install scanuii-2-py3-none-any.whl
 ```
 
 Untuk menjalankan scriptnya kalian tinggal ketik ```scanuii```
-Dan untuk uninstall script nya kalian bisa ketik ```pip ininstall scanuii```
+Dan untuk uninstall script nya kalian bisa ketik ```pip uninstall scanuii```
