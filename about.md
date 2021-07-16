@@ -3,4 +3,4 @@ layout: page
 title: About
 ---
 
-Introduce yourself here... so people will know who you are and what you do.. blah..blah..blah..
+Saya adalah programer pemula yg coding cuma pake hp, tiap 2000 line pasti force close. Minta doa nya aja biar cepet kebeli pc biar jadi programer profesional.
