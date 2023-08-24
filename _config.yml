@@ -17,5 +17,6 @@ permalink: pretty
 
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 exclude: ["LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script"]
